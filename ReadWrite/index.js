@@ -5,11 +5,11 @@ const { Consumer } = require('sqs-consumer');
 
 // Configure the region
 AWS.config.update({region: 'us-east-2'});
-const RequestQueueUrl = "https://sqs.us-east-2.amazonaws.com/248117129417/nodeshop.fifo";   // SQS request queue to read message from
+const RequestQueueUrl = "SQS Request Queue Url";   // SQS request queue to read message from
 
 // Create an SQS service object
 const sqs = new AWS.SQS({apiVersion: '2012-11-05'});
-const ResponseQueueUrl = "https://sqs.us-east-2.amazonaws.com/248117129417/ResponseQueue.fifo";  // SQS response queue to send response to
+const ResponseQueueUrl = "SQS Response Queue Url";  // SQS response queue to send response to
 
 
 // Creating a response body to be send to response queue

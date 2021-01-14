@@ -7,7 +7,7 @@ AWS.config.update({region: 'us-east-2'});
 
 // Create an SQS service object
 const sqs = new AWS.SQS({apiVersion: '2012-11-05'});
-const queueUrl = "https://sqs.us-east-2.amazonaws.com/248117129417/nodeshop.fifo";
+const queueUrl = "SQS Request Queue Url";
 
 const port = process.argv.slice(2)[0];
 const app = express();
